@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/istylesheet.css">
+    <title>About Page</title>
+</head>
+
+<body>
+
+    <header class="Primary-header">
+        <div class="wrapper">
+            <div class="inside_Primary-header">
+                <span class="logo">LOGO</span>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="hover-animation">Home</a></li>
+                    <li><a href="about.html" class="hover-animation">About</a>
+                    </li>
+                    <li><a href="#" class="hover-animation">Blog</a></li>
+                    <li><a href="#" class="hover-animation">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div>
+            <h1 class="main-heading">About Us</h1>
+            <p>This is just an about page with some lorem text just to show the functioning of the nav bar. Lorem ipsum
+                dolor sit amet consectetur, adipisicing elit. Fuga perferendis aliquid hic, itaque maiores, quidem
+                officia
+                rem, unde consequatur labore magnam repudiandae corrupti?
+            </p>
+            <br>
+            <h2>Lorem, ipsum dolor.</h2>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat excepturi impedit neque ratione.
+                Explicabo
+                voluptatum laudantium ad quibusdam nisi quod ipsam dolorum soluta consectetur, qui fugit architecto
+                iste,
+                minima, totam iure sapiente eveniet ducimus optio tempora officia molestias! Possimus quos assumenda
+                nulla
+                iure debitis aspernatur?
+            </p>
+        </div>
+        <div class="blocks">
+            <div class="block_one blok">
+                <h3>Lorem ipsum dolor sit</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque voluptate alias, consectetur
+                    corporis placeat saepe nesciunt natus. Soluta ipsa magnam repudiandae dolore voluptates, obcaecati
+                    facere animi blanditiis, aperiam doloremque quaerat, eaque ipsum. Quos suscipit, laudantium minima
+                    soluta voluptatem velit a nostrum molestiae saepe amet? Reprehenderit?
+                </p>
+            </div>
+            <div class="block_two blok">
+                <h3>Lorem, ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque aliquam dolores impedit fuga
+                    voluptate iure pariatur animi eius. Commodi quidem rem consectetur adipisci, dolores voluptas
+                    inventore aut est, voluptatum id vel veritatis nostrum officiis. Adipisci praesentium aliquid harum
+                    quaerat, sint suscipit porro recusandae pariatur ea.
+                </p>
+            </div>
+        </div>
+        <div>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit dolores eius et omnis eum ducimus rem
+                tenetur iste corrupti magni neque accusantium explicabo eaque, voluptatibus, labore unde fuga
+                consequuntur possimus corporis. Vel qui dolorum facilis temporibus consequuntur iste at provident, modi
+                minima veritatis, delectus voluptates perspiciatis eius! Corrupti saepe error nisi eligendi commodi
+                earum, modi a quam quae beatae nesciunt maiores ipsa repellendus quia illo voluptates aperiam.
+            </p>
+            <br>
+            <h3>Lorem ipsum dolor sit.</h3>
+            <br>
+            <h3>Lorem, ipsum dolor.</h3>
+            <br>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum quibusdam odit nemo, aut deleniti
+                officiis illum dolor quaerat, dolores ab cum ipsa ipsum iure minima temporibus deserunt quae soluta at
+                officia adipisci fugiat? Aut, nulla? Rem praesentium a suscipit sed tenetur accusantium. Aperiam fugit
+                facilis ab nam enim vero, modi odit iste nostrum minima deserunt inventore hic earum doloremque
+                consequuntur quidem natus molestiae deleniti temporibus quod, quo molestias. Non corrupti tenetur,
+                provident eligendi dolorum ab, consequatur nisi in modi eos autem laboriosam nemo ducimus quia
+                veritatis, vero tempore veniam doloremque. Ex placeat a repellat et iure tempora atque ducimus sapiente.
+            </p>
+        </div>
+    </main>
+</body>
+
+<script>
+    document.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+
+        if (window.scrollY > 0) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
+
+</html>

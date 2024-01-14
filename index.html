@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="istylesheet.css">
+    <script src="index.js"></script>
+    <title>Navigation Menu</title>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1107.0" data-gr-ext-installed class="vsc-initiallized">
+    <header class="Primary-header">
+        <div class="wrapper">
+            <div class="inside_Primary-header">
+                <span class="logo">LOGO</span>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="hover-animation" >Home</a></li> <!--onclick="loadContent('home')"-->
+                    <li><a href="about.html" class="hover-animation" >About</a>  <!--onclick="loadContent('about')"-->
+                    </li>
+                    <li><a href="#" class="hover-animation" >Blog</a></li>  <!--onclick="loadContent('blog')"-->
+                    <li><a href="#" class="hover-animation" >Contact</a></li>  <!--onclick="loadContent('contact')"-->
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main id="main-content">
+        <div>
+            <h1 class="main-heading">Web Development</h1>
+            <p class="main-para"><b>Web development</b> refers to the creating, building, and maintaining of
+                websites.
+                It
+                includes aspects such as web design, web publishing, web programming, and database management. It is
+                the
+                creation of an application that works over the internet i.e. websites.
+            </p>
+            <br>
+            <p>
+                The word Web Development is made up of two words, that is:
+                <br>
+                <br>
+            <dl>
+                <dt>Web:</dt>
+                <dd>It refers to websites, web pages or anything that works over the internet.</dd>
+                <dt>Development:</dt>
+                <dd>
+                    It refers to building the application from scratch. Web Development can be classified into two
+                    ways:<br>
+                    Frontend Development <br>
+                    Backend Development <br>
+                </dd>
+            </dl>
+            <br>
+            <br>
+            </p>
+        </div>
+        <div class="front-end">
+            <h2>Frontend Development:</h2>
+            <br>
+            <p>
+                The part of a website where the user interacts directly is termed as front end. It is also referred
+                to
+                as the ‘client side’ of the application.
+            </p>
+            <br>
+            <h3>Popular Frontend Tecchnologies:</h3>
+            <br>
+            <p>
+            <dl>
+                <dt>
+                    HTML:
+                </dt>
+                <br>
+                <dd>
+                    HTML stands for HyperText Markup Language. It is used to design the front end portion of web
+                    pages
+                    using markup language. It acts as a skeleton for a website since it is used to make the
+                    structure of a
+                    website.
+                </dd>
+                <br>
+                <dt>
+                    CSS:
+                </dt>
+                <br>
+                <dd>
+                    Cascading Style Sheets fondly referred to as CSS is a simply designed language intended to simplify
+                    the process of making web pages presentable. It is used to style our website.
+                </dd>
+                <br>
+                <dt>
+                    JavaScript:
+                </dt>
+                <br>
+                <dd>
+                    JavaScript is a scripting language used to provide a dynamic behavior to our website.
+                </dd>
+                <br>
+                <dt>
+                    Bootstrap:
+                </dt>
+                <br>
+                <dd>
+                    Bootstrap is a free and open-source tool collection for creating responsive websites and web
+                    applications. It is the most popular CSS framework for developing responsive, mobile-first
+                    websites.
+                    <br>
+                    Nowadays, the websites are perfect for all browsers (IE, Firefox, and Chrome) and for all sizes
+                    of screens (Desktop, Tablets, Phablets, and Phones).
+                </dd>
+            </dl>
+            </p>
+        </div>
+    </main>
+</body>
+
+<script>
+    document.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+
+        if (window.scrollY > 0) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
+
+<!-- <script>
+    async function loadContent(page) {
+        const mainContent = document.getElementById('main-content');
+
+        try {
+            // Fetch content from separate HTML files (you can adjust the file paths)
+            const response = await fetch(`content/${page}.html`);
+            const html = await response.text();
+
+            // Update the main content with the fetched HTML
+            mainContent.innerHTML = html;
+        } catch (error) {
+            console.error('Error loading content:', error);
+        }
+    }
+</script>
+
+<script>
+    async function loadContent(page) {
+        const mainContent = document.getElementById('main-content');
+
+        try {
+            // Display a loading message
+            mainContent.innerHTML = '<p>Loading...</p>';
+
+            // Fetch content from separate HTML files
+            const response = await fetch(`content/${page}.html`);
+            const html = await response.text();
+
+            // Update the main content with the fetched HTML
+            mainContent.innerHTML = html;
+        } catch (error) {
+            console.error('Error loading content:', error);
+        }
+    } -->
+
+</script>
+
+
+</html>
